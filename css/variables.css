@@ -1,0 +1,129 @@
+:root {
+    /* Colors - Luxury Dark Mode */
+    --color-primary: #0a0a0a;
+    /* Deep Black */
+    --color-primary-light: #1c1c1c;
+    /* Charcoal Grey */
+
+    --color-text: #e0e0e0;
+    /* Off-White Text */
+    --color-text-muted: #a0a0a0;
+    /* Muted Silver */
+
+    --color-secondary: #D4AF37;
+    /* Elegant Gold */
+    --color-secondary-hover: #b5952f;
+
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-border: #e0e0e0;
+    /* Keeping this as it's not in the new block but was in the old */
+
+    /* Overlay for Cinematic feel */
+    --color-overlay: rgba(0, 0, 0, 0.4);
+
+    /* Typography - Modern & Sophisticated */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+
+    /* Spacing & Layout */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 3rem;
+    --spacing-lg: 6rem;
+    /* More whitespace */
+    --spacing-xl: 8rem;
+    /* Keeping this as it's not in the new block but was in the old */
+
+    /* Layout */
+    --container-width: 1200px;
+    /* Keeping this as it's not in the new block but was in the old */
+    --header-height: 90px;
+    --border-radius: 2px;
+    /* Sharp edges for luxury feel */
+    --border-radius-lg: 4px;
+
+    /* Transitions */
+    --transition-fast: 0.4s ease-out;
+    /* Smoother, slower transitions */
+    /* --transition-medium: 0.5s ease; Removed as per new palette */
+}
+
+/* Dark Theme Default */
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-white);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: var(--gradient-gold);
+    color: var(--color-black);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-outline:hover {
+    background: var(--color-secondary);
+    color: var(--color-black);
+}

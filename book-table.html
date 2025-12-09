@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Pot of Jollof Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+    <div class="booking-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="step-counter"><span id="currentStep">1</span> / <span id="totalSteps">5</span></div>
+        <form id="bookingForm" class="booking-form">
+            <div class="form-step active" data-step="1">
+                <div class="step-content">
+                    <h2 class="step-title">When would you like to dine with us?</h2>
+                    <p class="step-subtitle">Select your preferred date</p>
+                    <div class="date-picker-container">
+                        <input type="date" id="reservationDate" name="date" required>
+                    </div>
+                    <button type="button" class="btn-next" onclick="nextStep()">Continue <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="form-step" data-step="2">
+                <div class="step-content">
+                    <h2 class="step-title">How many guests?</h2>
+                    <p class="step-subtitle">Select the number of people</p>
+                    <div class="guest-selector">
+                        <button type="button" class="guest-btn" onclick="selectGuests(1)">1 Guest</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(2)">2 Guests</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(3)">3 Guests</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(4)">4 Guests</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(5)">5 Guests</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(6)">6 Guests</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(7)">7 Guests</button>
+                        <button type="button" class="guest-btn" onclick="selectGuests(8)">8+ Guests</button>
+                    </div>
+                    <input type="hidden" id="guestCount" name="guests" required>
+                    <div class="nav-buttons"><button type="button" class="btn-back" onclick="prevStep()"><i
+                                class="fas fa-arrow-left"></i> Back</button></div>
+                </div>
+            </div>
+            <div class="form-step" data-step="3">
+                <div class="step-content">
+                    <h2 class="step-title">What time works best?</h2>
+                    <p class="step-subtitle">Choose your arrival time</p>
+                    <div class="time-selector" id="timeSlots"></div>
+                    <input type="hidden" id="arrivalTime" name="time" required>
+                    <div class="nav-buttons"><button type="button" class="btn-back" onclick="prevStep()"><i
+                                class="fas fa-arrow-left"></i> Back</button></div>
+                </div>
+            </div>
+            <div class="form-step" data-step="4">
+                <div class="step-content">
+                    <h2 class="step-title">Almost there!</h2>
+                    <p class="step-subtitle">Please provide your contact details</p>
+                    <div class="contact-fields">
+                        <div class="input-group"><label for="fullName">Full Name *</label><input type="text"
+                                id="fullName" name="name" required placeholder="John Doe"></div>
+                        <div class="input-group"><label for="phone">Phone Number *</label><input type="tel" id="phone"
+                                name="phone" required placeholder="+254 700 000 000"></div>
+                        <div class="input-group"><label for="email">Email Address *</label><input type="email"
+                                id="email" name="email" required placeholder="john@example.com"></div>
+                        <div class="input-group"><label for="specialRequests">Special Requests
+                                (Optional)</label><textarea id="specialRequests" name="notes" rows="3"
+                                placeholder="Any dietary restrictions or special occasions?"></textarea></div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button type="button" class="btn-back" onclick="prevStep()"><i class="fas fa-arrow-left"></i>
+                            Back</button>
+                        <button type="button" class="btn-next" onclick="nextStep()">Review <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-step" data-step="5">
+                <div class="step-content">
+                    <h2 class="step-title">Review Your Reservation</h2>
+                    <p class="step-subtitle">Please confirm your booking details</p>
+                    <div class="review-summary">
+                        <div class="review-item"><i class="fas fa-calendar"></i>
+                            <div><span class="review-label">Date</span><span class="review-value"
+                                    id="reviewDate">-</span></div>
+                        </div>
+                        <div class="review-item"><i class="fas fa-users"></i>
+                            <div><span class="review-label">Guests</span><span class="review-value"
+                                    id="reviewGuests">-</span></div>
+                        </div>
+                        <div class="review-item"><i class="fas fa-clock"></i>
+                            <div><span class="review-label">Time</span><span class="review-value"
+                                    id="reviewTime">-</span></div>
+                        </div>
+                        <div class="review-item"><i class="fas fa-user"></i>
+                            <div><span class="review-label">Name</span><span class="review-value"
+                                    id="reviewName">-</span></div>
+                        </div>
+                        <div class="review-item"><i class="fas fa-phone"></i>
+                            <div><span class="review-label">Phone</span><span class="review-value"
+                                    id="reviewPhone">-</span></div>
+                        </div>
+                        <div class="review-item"><i class="fas fa-envelope"></i>
+                            <div><span class="review-label">Email</span><span class="review-value"
+                                    id="reviewEmail">-</span></div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button type="button" class="btn-back" onclick="prevStep()"><i class="fas fa-arrow-left"></i>
+                            Back</button>
+                        <button type="submit" class="btn-submit" id="submitBtn"><span class="submit-text">Confirm
+                                Reservation</span><span class="submit-loader" style="display: none;"><i
+                                    class="fas fa-spinner fa-spin"></i> Submitting...</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-step" data-step="6">
+                <div class="step-content success-content">
+                    <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                    <h2 class="step-title">Reservation Confirmed!</h2>
+                    <p class="step-subtitle">We've received your booking request</p>
+                    <div class="success-message">
+                        <p>Thank you for choosing Pot of Jollof Kitchen! We've sent a confirmation to your email.</p>
+                        <p>Our team will contact you shortly to confirm your reservation.</p>
+                    </div>
+                    <a href="index.html" class="btn-home"><i class="fas fa-home"></i> Back to Home</a>
+                </div>
+            </div>
+        </form>
+        <div class="booking-logo"><a href="index.html">Pot of Jollof <span>Kitchen</span></a></div>
+    </div>
+    <script src="js/booking.js"></script>
+</body>
+
+</html>

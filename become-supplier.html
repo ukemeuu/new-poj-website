@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become A Supplier | Pot of Jollof Kitchen</title>
+    <meta name="description" content="Partner with Pot of Jollof Kitchen. We are looking for premium local suppliers.">
+
+    <!-- Fonts (Luxury Redesign) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Pot of Jollof <span>Kitchen</span></a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="events.html" class="nav-link">Reservations</a></li>
+                <li><a href="about.html" class="nav-link">Our Story</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="http://potofjollof.africa.restaurant" target="_blank" class="btn-gold-outline"
+                        style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section" style="padding-top: 150px; padding-bottom: 50px;">
+        <div class="container text-center">
+            <h1 style="font-size: 3.5rem; color: var(--color-white); margin-bottom: 1rem;">Partner With Us</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">
+                We are always seeking fresh, high-quality ingredients and sustainable partnerships.
+            </p>
+        </div>
+    </section>
+
+    <!-- Supplier Form -->
+    <section class="section" style="background: var(--color-primary-light);">
+        <div class="container">
+            <form class="contact-form"
+                style="max-width: 700px; margin: 0 auto; background: var(--color-primary); border: 1px solid rgba(255,255,255,0.05);">
+                <div class="form-group">
+                    <label style="color: #888; display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Business
+                        Name</label>
+                    <input type="text" placeholder="e.g. Fresh Farms Ltd" required>
+                </div>
+
+                <div class="form-group">
+                    <label style="color: #888; display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Product
+                        Category</label>
+                    <select
+                        style="width: 100%; padding: 1rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--color-white); border-radius: 0;">
+                        <option value="">Select Category</option>
+                        <option value="produce">Fresh Produce (Veg/Fruit)</option>
+                        <option value="meat">Meat & Poultry</option>
+                        <option value="dry">Dry Goods & Spices</option>
+                        <option value="packaging">Packaging</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label style="color: #888; display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Contact
+                            Person</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label style="color: #888; display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Phone
+                            Number</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="color: #888; display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Product
+                        Details / Pitch</label>
+                    <textarea rows="5" placeholder="Tell us about what you supply..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Proposal</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h4 class="logo" style="margin-bottom: 2rem;">Pot of Jollof <span>Kitchen</span></h4>
+
+            <div style="margin-bottom: 2rem;">
+                <a href="become-supplier.html"
+                    style="color: var(--color-text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid transparent; transition: 0.4s;">Become
+                    A Supplier</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p style="color: #666; font-size: 0.8rem;">&copy; 2025. All Rights Reserved.</p>
+            <p style="color: #444; font-size: 0.7rem; margin-top: 10px;">Designed by <a
+                    href="http://mani24studio.vercel.app/" target="_blank"
+                    style="color: #666; text-decoration: none; transition: 0.3s;"
+                    onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='#666'">Mani 24
+                    Studio</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

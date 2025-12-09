@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Bookings | Pot of Jollof Kitchen</title>
+    <meta name="description" content="Get in touch with Pot of Jollof, or book a table via WhatsApp.">
+
+    <!-- Fonts (Luxury Redesign) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Pot of Jollof <span>Kitchen</span></a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="book-table.html" class="nav-link">Book Table</a></li>
+                <li><a href="http://potofjollof.africa.restaurant" target="_blank" class="btn-gold-outline"
+                        style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title" style="font-size: 3.5rem;">Get in <span>Touch</span></h1>
+                <p class="hero-subtitle">We'd love to hear from you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+                <div class="feature-card" style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+                    <i class="fas fa-map-marker-alt"
+                        style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--color-white); margin-bottom: 0.5rem;">Location</h3>
+                    <p style="color: #ccc;">Hurlingham, Nairobi</p>
+                </div>
+                <div class="feature-card" style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+                    <i class="fas fa-phone"
+                        style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--color-white); margin-bottom: 0.5rem;">Call Us</h3>
+                    <p style="color: #ccc;">0795-384-140</p>
+                </div>
+                <div class="feature-card" style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+                    <i class="fas fa-envelope"
+                        style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--color-white); margin-bottom: 0.5rem;">Email</h3>
+                    <p style="color: #ccc;">customerservice@potofjollof.co.ke</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="section" style="background: var(--color-primary-light);">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 style="color: var(--color-white); margin-bottom: 1rem;">Book a Table</h2>
+                    <p style="color: #aaa; margin-bottom: 2rem;">
+                        Reserve your spot for an unforgettable dining experience. For large groups (10+), please call us
+                        directly.
+                    </p>
+                </div>
+                <form id="booking-form" class="contact-form">
+                    <div class="form-group">
+                        <label style="color: #888; font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">Your
+                            Name</label>
+                        <input type="text" id="booking-name" required>
+                    </div>
+                    <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label
+                                style="color: #888; font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">Date</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        <div>
+                            <label
+                                style="color: #888; font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">Time</label>
+                            <input type="time" id="booking-time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: #888; font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">Number of
+                            Guests</label>
+                        <select id="booking-guests"
+                            style="width: 100%; padding: 1rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--border-radius); color: #fff;">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6+">6+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Request Booking (WhatsApp)</button>
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 1rem; text-align: center;">
+                        This will open WhatsApp to send your request directly to us.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h4 class="logo" style="margin-bottom: 2rem;">Pot of Jollof <span>Kitchen</span></h4>
+
+            <div style="margin-bottom: 2rem;">
+                <a href="become-supplier.html"
+                    style="color: var(--color-text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid transparent; transition: 0.4s;">Become
+                    A Supplier</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <p style="color: #888; font-size: 0.9rem;">Authentic Nigerian cuisine delivering happiness one plate
+                    at a time.</p>
+                <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/potofjollofke/" target="_blank"><i class="fab fa-instagram"
+                            style="font-size: 1.2rem;"></i></a>
+                    <a href="https://twitter.com/potofjollofke" target="_blank"><i class="fab fa-twitter"
+                            style="font-size: 1.2rem;"></i></a>
+                    <a href="https://www.facebook.com/Potofjollofke/" target="_blank"><i class="fab fa-facebook"
+                            style="font-size: 1.2rem;"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; color: #888;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; color: #888;">
+                    <li><i class="fas fa-phone"></i> 0795-384-140</li>
+                    <li><i class="fas fa-envelope"></i> customerservice@potofjollof.co.ke</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hurlingham, Nairobi</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 2rem; color: #666; font-size: 0.8rem;">
+            &copy; 2025 POT OF JOLLOF LTD. All rights reserved.
+            <p style="color: #444; font-size: 0.7rem; margin-top: 10px;">Designed by <a
+                    href="http://mani24studio.vercel.app/" target="_blank"
+                    style="color: #666; text-decoration: none; transition: 0.3s;"
+                    onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='#666'">Mani 24
+                    Studio</a></p>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

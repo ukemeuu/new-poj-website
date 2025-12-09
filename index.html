@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pot of Jollof Kitchen | Authentic Nigerian Cuisine</title>
+    <meta name="description"
+        content="Experience the authentic taste of Nigeria in Nairobi. Pot of Jollof Kitchen serves premium Jollof Rice, Egusi Soup, and more.">
+
+    <!-- Fonts (Luxury Redesign) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Preload Hero Image for LCP -->
+    <link rel="preload" as="image" href="assets/images/13.avif">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Pot of Jollof <span>Kitchen</span></a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <!-- <li><a href="about.html" class="nav-link">Our Story</a></li> -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="http://potofjollof.africa.restaurant" target="_blank" class="btn-gold-outline"
+                        style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Cinematic Video/Image Background) -->
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <span class="hero-subtitle">IF IT'S NOT OUR JOLLOF, IT'S NOT WORTH IT.</span>
+            <h1 class="hero-title">Experience the <br> Taste of Nigeria</h1>
+            <div style="margin-top: 2rem;">
+                <a href="https://potofjollof.africa.restaurant/" class="btn">View Menu</a>
+                <a href="https://potofjollof.africa.restaurant/" class="btn btn-outline"
+                    style="margin-left: 1rem;">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container" style="text-align: center; max-width: 800px;">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Story</h2>
+                <p>Authenticity in Every Bite</p>
+            </div>
+            <p style="color: #ccc; margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8;" data-aos="fade-up"
+                data-aos-delay="100">
+                At Pot of Jollof Kitchen, we bring the vibrant spirit of Nigeria to the heart of Nairobi.
+                Our culinary journey is rooted in tradition, using time-honored recipes and the freshest ingredients
+                to create dishes that are not just food, but a celebration of culture. From the smoky aroma of our
+                signature Jollof rice to the rich depths of our Egusi soup, every plate tells a story of passion and
+                heritage.
+            </p>
+            <a href="book-table.html" class="btn btn-outline" data-aos="fade-up" data-aos-delay="200">Book a Table</a>
+        </div>
+    </section>
+
+    <!-- Featured Menu Preview (Grid Layout) -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Signature Dishes</h2>
+                <p>Curated for the Discerning Palate</p>
+            </div>
+        </div>
+        <div class="featured-grid">
+            <!-- Item 1 -->
+            <div class="featured-card" onclick="window.location.href='menu.html'" data-aos="fade-up" data-aos-delay="0">
+                <div class="featured-wrapper">
+                    <img src="assets/images/smokey party jollof.png" alt="Jollof Rice" class="featured-img"
+                        loading="lazy">
+                    <div class="featured-overlay">
+                        <h3 class="card-title">Smokey Jollof Rice</h3>
+                        <p class="card-desc">The crown jewel of West African cuisine. Perfectly seasoned, undeniably
+                            authentic.</p>
+                        <span class="card-link">Order Now</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="featured-card" onclick="window.location.href='menu.html'" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="featured-wrapper">
+                    <img src="assets/images/egusi soup.webp" alt="Egusi Soup" class="featured-img" loading="lazy">
+                    <div class="featured-overlay">
+                        <h3 class="card-title">Egusi Soup</h3>
+                        <p class="card-desc">Rich, nutty melon seed soup served with smooth pounded yam.</p>
+                        <span class="card-link">Order Now</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="featured-card" onclick="window.location.href='menu.html'" data-aos="fade-up"
+                data-aos-delay="400">
+                <div class="featured-wrapper">
+                    <img src="assets/images/goat pepper soup.png" alt="Pepper Soup" class="featured-img" loading="lazy">
+                    <div class="featured-overlay">
+                        <h3 class="card-title">Pepper Soup</h3>
+                        <p class="card-desc">A spicy, soul-warming broth with tender cuts of goat meat.</p>
+                        <span class="card-link">Order Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef/Catering Section (Split Layout) -->
+    <section class="section" style="padding: 0;">
+        <div class="catering-split">
+            <div class="catering-content" data-aos="fade-right">
+                <h2 style="color: var(--color-white); margin-bottom: 1.5rem;">Catering & Private Events</h2>
+                <p
+                    style="color: #ccc; margin-bottom: 2rem; font-size: 1rem; font-weight: 300; max-width: 500px; line-height: 1.8;">
+                    Elevate your next gathering with the bold flavors of Nigeria. From corporate lunches to intimate
+                    weddings, Pot of Jollof Kitchen brings the feast to you. Custom menus, professional service, and
+                    unforgettable taste.
+                </p>
+                <a href="contact.html" class="btn btn-outline">Inquire Now</a>
+            </div>
+            <div class="catering-image-wrapper" data-aos="fade-left">
+                <img src="assets/images/catering_event.jpg" alt="Catering Service" class="catering-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Brands -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 3rem; text-transform: uppercase; margin-bottom: 1rem;">EXPLORE OUR BRANDS</h2>
+                <p style="font-size: 1.2rem; color: #888;">More tastes from our kitchen</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="assets/images/cafe_swahili_bg.jpg" alt="Cafe Swahili" class="brand-bg">
+                    <div class="brand-overlay">
+                        <img src="assets/images/cafe_swahili_logo.png" alt="Cafe Swahili Logo" class="brand-logo-round">
+                        <p class="brand-desc">Authentic Coastal & Swahili Dishes</p>
+                        <a href="https://glovoapp.com/en/ke/nairobi/stores/cafe-swahili-ltd-nbo" target="_blank"
+                            class="brand-link">VISIT
+                            DETAILS <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="brand-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/little_lagos_bg.jpg" alt="Little Lagos" class="brand-bg">
+                    <div class="brand-overlay">
+                        <img src="assets/images/little_lagos_logo.jpg" alt="Little Lagos Logo" class="brand-logo-round">
+                        <p class="brand-desc">Get A Taste Of Lagos</p>
+                        <a href="https://www.ubereats.com/ke/store/little-lagos-nigerian-restaurant/h4Vi4uEYXEK5UNjbEhbGQw?srsltid=AfmBOorP0tWiIy8qyE62WdNq1oNiw1QKNHMuIH_958m28Nehm9tODKg5"
+                            target="_blank" class="brand-link">VISIT
+                            DETAILS <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Minimalist Swiper) -->
+    <section class="section" style="background-color: #000;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Guest Experiences</h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reviews-minimal">
+                            <p class="review-text">"The Jollof rice takes me back to Lagos. The atmosphere is
+                                sophisticated yet welcoming. A hidden gem in Nairobi."</p>
+                            <span class="review-author">- Chijioke N.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-minimal">
+                            <p class="review-text">"Finally, diverse Nigerian food presented with class. The Egusi soup
+                                is
+                                a must-try. Highly recommended for date nights."</p>
+                            <span class="review-author">- Sarah K.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-minimal">
+                            <p class="review-text">"We hired them for our wedding catering. The guests are still talking
+                                about the food. Professional and delicious."</p>
+                            <span class="review-author">- The Omonds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Delivery Partners -->
+    <section class="section"
+        style="background-color: var(--color-black); padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <h3
+                style="text-align: center; color: var(--color-text-muted); font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 2rem;">
+                DELIVERY PARTNERS</h3>
+            <div class="partners-grid">
+                <img src="assets/images/ubereats.png" alt="Uber Eats" class="partner-logo">
+                <img src="assets/images/glovo.png" alt="Glovo" class="partner-logo">
+                <img src="assets/images/bolt food.png" alt="Bolt Food" class="partner-logo">
+                <img src="assets/images/ando.png" alt="Ando" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h4 class="logo" style="margin-bottom: 2rem;">Pot of Jollof <span>Kitchen</span></h4>
+
+            <div style="margin-bottom: 2rem;">
+                <a href="become-supplier.html"
+                    style="color: var(--color-text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid transparent; transition: 0.4s;">Become
+                    A Supplier</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/potofjollofke/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/potofjollofke" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/Potofjollofke/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p style="color: #666; font-size: 0.8rem;">&copy; 2025 POT OF JOLLOF LTD. All rights reserved.</p>
+            <p style="color: #444; font-size: 0.7rem; margin-top: 10px;">Designed by <a
+                    href="http://mani24studio.vercel.app/" target="_blank"
+                    style="color: #666; text-decoration: none; transition: 0.3s;"
+                    onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='#666'">Mani 24
+                    Studio</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

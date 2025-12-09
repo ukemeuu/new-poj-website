@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Pot of Jollof Kitchen</title>
+    <meta name="description"
+        content="Explore our menu of authentic Nigerian delicacies including Jollof Rice, Egusi Soup, and more.">
+
+    <!-- Fonts (Luxury Redesign) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Page-Specific Styles for Menu */
+        .menu-category {
+            margin-bottom: 4rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+        }
+
+        .menu-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: -30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-img {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .menu-title {
+            color: var(--color-secondary);
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-price {
+            font-weight: 700;
+            color: var(--color-white);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Pot of Jollof <span>Kitchen</span></a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="book-table.html" class="nav-link">Book Table</a></li>
+                <li><a href="http://potofjollof.africa.restaurant" target="_blank" class="btn-gold-outline"
+                        style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title" style="font-size: 3.5rem;">Our <span>Menu</span></h1>
+                <p class="hero-subtitle">Hand-crafted authentic Nigerian dishes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Category: Rice Dishes -->
+            <div class="menu-category" data-aos="fade-up">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Rice Dishes</h2>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="0">
+                        <img src="assets/images/12.avif" alt="Jollof Rice" class="menu-img floating-img" loading="lazy">
+                        <div class="menu-details">
+                            <h3 class="menu-title">Signauture Jollof Rice</h3>
+                            <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Smoky, spicy, and purely
+                                authentic Nigerian Jollof.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                                    style="padding: 8px 20px;">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/images/1.avif" alt="Fried Rice" class="menu-img" loading="lazy">
+                        <div class="menu-details">
+                            <h3 class="menu-title">Nigerian Fried Rice</h3>
+                            <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Packed with veggies, liver,
+                                and shrimp (optional).</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                                    style="padding: 8px 20px;">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/images/ofada.avif" alt="Ofada Rice" class="menu-img" loading="lazy">
+                        <div class="menu-details">
+                            <h3 class="menu-title">Ayamase (Ofada Sauce)</h3>
+                            <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Spicy green pepper sauce
+                                served with local Ofada rice.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                                    style="padding: 8px 20px;">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Soups & Swallows -->
+            <div class="menu-category" data-aos="fade-up">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Soups & Swallows</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/11.avif" alt="Egusi" class="menu-img" loading="lazy">
+                        <h3 class="menu-title">Egusi Soup</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Melon seeds cooked with spinach
+                            and assorted meat.</p>
+                        <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 20px;">Order Now</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/images/efriror.avif" alt="Efo Riro" class="menu-img" loading="lazy">
+                        <h3 class="menu-title">Efo Riro</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Rich spinach stew with assorted
+                            meats and fish.</p>
+                        <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 20px;">Order Now</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/images/okro.avif" alt="Okra Soup" class="menu-img" loading="lazy">
+                        <h3 class="menu-title">Okra Soup</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Fresh okra cooked with seafood
+                            and meat.</p>
+                        <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 20px;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Specials -->
+            <div class="menu-category" data-aos="fade-up">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Specials & Sides</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/3.avif" alt="Pepper Soup" class="menu-img" loading="lazy">
+                        <h3 class="menu-title">Goat Meat Pepper Soup</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Spicy, hot, and soul-warming.
+                        </p>
+                        <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 20px;">Order Now</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/images/nkw.avif" alt="Nkwobi" class="menu-img" loading="lazy">
+                        <h3 class="menu-title">Nkobi</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Spicy cow foot delicacy.</p>
+                        <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 20px;">Order Now</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/images/moi.avif" alt="Moi Moi" class="menu-img" loading="lazy">
+                        <h3 class="menu-title">Moi Moi</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Steamed bean pudding.</p>
+                        <a href="http://potofjollof.africa.restaurant" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 20px;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h4 class="logo" style="margin-bottom: 2rem;">Pot of Jollof <span>Kitchen</span></h4>
+
+            <div style="margin-bottom: 2rem;">
+                <a href="become-supplier.html"
+                    style="color: var(--color-text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid transparent; transition: 0.4s;">Become
+                    A Supplier</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <p style="color: #888; font-size: 0.9rem;">Authentic Nigerian cuisine delivering happiness one plate
+                    at a time.</p>
+                <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/potofjollofke/" target="_blank"><i class="fab fa-instagram"
+                            style="font-size: 1.2rem;"></i></a>
+                    <a href="https://twitter.com/potofjollofke" target="_blank"><i class="fab fa-twitter"
+                            style="font-size: 1.2rem;"></i></a>
+                    <a href="https://www.facebook.com/Potofjollofke/" target="_blank"><i class="fab fa-facebook"
+                            style="font-size: 1.2rem;"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; color: #888;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; color: #888;">
+                    <li><i class="fas fa-phone"></i> 0795-384-140</li>
+                    <li><i class="fas fa-envelope"></i> customerservice@potofjollof.co.ke</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hurlingham, Nairobi</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333;">
+            <p style="color: #666; font-size: 0.8rem;">&copy; 2025 POT OF JOLLOF LTD. All rights reserved.</p>
+            <p style="color: #444; font-size: 0.7rem; margin-top: 10px;">Designed by <a
+                    href="http://mani24studio.vercel.app/" target="_blank"
+                    style="color: #666; text-decoration: none; transition: 0.3s;"
+                    onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='#666'">Mani 24
+                    Studio</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Franchise a Location — Pot of Jollof Kitchen</title>
+    <meta name="description" content="Franchise a Pot of Jollof Kitchen location. See investment, requirements, process, and apply to bring the Taste of Nigeria to your city." />
+
+    <style>
+        :root {
+            --brand: #ff8b00;
+            --brand-light: #ffa73a;
+            --brand-dark: #e67e00;
+            --text-primary: #ffffff;
+            --text-secondary: #e5e7eb;
+            --text-muted: #9ca3af;
+            --bg-primary: #0a0e27;
+            --bg-secondary: #1a1f3a;
+            --bg-tertiary: #252d4a;
+            --border-color: #3f4663;
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 16px 0;
+            backdrop-filter: blur(10px);
+            background: rgba(10, 14, 39, 0.7);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--brand), var(--brand-light));
+            display: grid;
+            place-items: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 8px 16px rgba(255, 139, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        nav a {
+            position: relative;
+            padding: 8px 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--brand);
+            transition: var(--transition);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a[style*="--brand"] {
+            color: var(--brand);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 139, 0, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 139, 0, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -150px;
+            left: -150px;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 8vw, 72px);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+            background: linear-gradient(120deg, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .highlight {
+            background: linear-gradient(120deg, var(--brand), var(--brand-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 16px;
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--brand), var(--brand-light));
+            color: #000;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(255, 139, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 139, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--brand);
+            color: var(--brand);
+            background: rgba(255, 139, 0, 0.05);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 64px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            border-color: var(--brand);
+            background: rgba(255, 139, 0, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--brand);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Section */
+        section {
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 48px;
+            letter-spacing: -0.5px;
+        }
+
+        .section-description {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 48px;
+            line-height: 1.8;
+        }
+
+        /* Why Partner Section */
+        .benefits {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px 32px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--brand), var(--brand-light), transparent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            border-color: var(--brand);
+            background: rgba(255, 139, 0, 0.08);
+            transform: translateY(-8px);
+        }
+
+        .benefit-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .benefit-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .benefit-card p {
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* Investment Section */
+        .investment {
+            background: var(--bg-primary);
+        }
+
+        /* Process Timeline */
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            position: relative;
+            margin-top: 48px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 3%;
+            right: 3%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--brand), transparent);
+            z-index: 0;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .timeline::before {
+                display: block;
+            }
+        }
+
+        .timeline-step {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .timeline-step:first-child {
+            border: 2px solid var(--brand);
+            background: rgba(255, 139, 0, 0.08);
+        }
+
+        .timeline-step:hover {
+            background: rgba(255, 139, 0, 0.1);
+            border-color: var(--brand);
+            transform: translateY(-6px);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--brand), var(--brand-light));
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            font-size: 20px;
+            color: #000;
+            margin: 0 auto 12px;
+            box-shadow: 0 8px 20px rgba(255, 139, 0, 0.3);
+            flex-shrink: 0;
+        }
+
+        .timeline-step h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .timeline-step p {
+            color: var(--text-muted);
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-top: 48px;
+        }
+
+        .form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: grid;
+            gap: 8px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-primary);
+        }
+
+        input, select, textarea {
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--brand);
+            background: rgba(255, 139, 0, 0.1);
+            box-shadow: 0 0 0 3px rgba(255, 139, 0, 0.1);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: var(--bg-primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 350px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--brand);
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .form-container {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .timeline {
+                gap: 12px;
+            }
+
+            .timeline::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">POJ</div>
+                <span>Pot of Jollof Kitchen</span>
+            </a>
+            <nav>
+                <a href="index.html#about">About</a>
+                <a href="http://potofjollof.africa.restaurant" target="_blank" rel="noopener noreferrer">Menu</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="#apply" style="color: var(--brand); font-weight: 700;">Franchise</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Franchise a <span class="highlight">Pot of Jollof</span> Location</h1>
+                <p>Bring the Taste of Nigeria to your city with a proven, delivery-strong QSR brand backed by 5+ years of success.</p>
+                <div class="cta-group">
+                    <a href="#apply" class="btn btn-primary">Apply to Franchise</a>
+                    <a href="#process" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">2020</div>
+                        <div class="stat-label">Year Founded</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Google Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100K+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Operating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="container">
+                <h2 class="section-title">Why Partner With Us?</h2>
+                <p class="section-description">We've refined operations across dine-in, takeaway, and delivery to create a resilient, scalable business you can run with confidence.</p>
+                <div class="grid-3">
+                    <div class="benefit-card">
+                        <span class="benefit-icon">📊</span>
+                        <h3>Battle-Tested Menu</h3>
+                        <p>Our Jollof, wings, grilled proteins, and soups are engineered for consistency, speed, and delivery-readiness.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">⚙️</span>
+                        <h3>Operational Playbooks</h3>
+                        <p>Inventory, prep flows, QA checklists, and staffing plans from 5+ years of continuous improvement.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">📱</span>
+                        <h3>Marketing Engine</h3>
+                        <p>App platform expertise, social campaigns, and community programs that drive consistent orders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section class="investment">
+            <div class="container">
+                <h2 class="section-title">Investment Overview</h2>
+                <p class="section-description">Transparent, performance-aligned investment with proven returns.</p>
+                <div class="grid-3">
+                    <div class="benefit-card">
+                        <h3>Initial Build-Out</h3>
+                        <p>KES 2M - 5M depending on location size and requirements. Includes equipment, signage, initial inventory, and working capital.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Franchise Fee</h3>
+                        <p>One-time brand & onboarding fee covering training program, marketing launch, and operational support.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Ongoing Royalties</h3>
+                        <p>Transparent royalty structure tied to performance. Detailed breakdown provided in franchise agreement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" style="background: var(--bg-primary);">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">A simple, guided path from first conversation to grand opening.</p>
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <div class="step-number">1</div>
+                        <h4>Submit EOI</h4>
+                        <p>Tell us your city, location ideas, background, and capital availability.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">2</div>
+                        <h4>Discovery Call</h4>
+                        <p>We align on goals, model, and territory suitability with you.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">3</div>
+                        <h4>Site Review</h4>
+                        <p>We assess footfall, delivery radius, and rent economics.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">4</div>
+                        <h4>Onboarding</h4>
+                        <p>Training, playbooks, build-out support, and pre-opening marketing.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">5</div>
+                        <h4>Grand Opening</h4>
+                        <p>Launch with promotional campaigns and platform integrations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <h2 class="section-title">See the Look & Feel</h2>
+                <p class="section-description">A glimpse of Pot of Jollof Kitchen brand concepts in action.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b29e368c?w=500&h=400&fit=crop" alt="Modern restaurant storefront">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1537457984797-f2b9fdd16e74?w=500&h=400&fit=crop" alt="Welcoming restaurant entrance">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224d09?w=500&h=400&fit=crop" alt="Restaurant interior design">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514432324607-2e467f4af445?w=500&h=400&fit=crop" alt="Professional kitchen setup">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=400&fit=crop" alt="Counter service area">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=400&fit=crop" alt="Dining area with ambiance">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="apply">
+            <div class="container">
+                <h2 class="section-title">Apply to Franchise</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <p class="section-description" style="text-align: center; margin: 0 0 48px;">Share a few details and our team will get back to you within 3 business days.</p>
+                        <form class="form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">Preferred City/Region *</label>
+                                    <input type="text" id="city" name="city" placeholder="e.g., Nairobi, Mombasa" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="experience">Business Experience *</label>
+                                    <select id="experience" name="experience" required>
+                                        <option value="">Select your experience level</option>
+                                        <option>Extensive (5+ years)</option>
+                                        <option>Moderate (1-4 years)</option>
+                                        <option>New to business</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="capital">Available Capital *</label>
+                                    <select id="capital" name="capital" required>
+                                        <option value="">Select your budget range</option>
+                                        <option>KES 1M - 2M</option>
+                                        <option>KES 2M - 3M</option>
+                                        <option>KES 3M - 5M</option>
+                                        <option>KES 5M+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tell Us About Your Location</label>
+                                <textarea id="message" name="message" placeholder="Street address, mall name, unit size, rent range..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Expression of Interest</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section style="background: var(--bg-secondary); text-align: center;">
+            <div class="container">
+                <h3 style="font-size: 24px; margin-bottom: 16px;">Questions?</h3>
+                <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 20px;">Get in touch with our franchise team</p>
+                <p style="font-size: 16px;">
+                    <a href="mailto:franchise@potofjollof.co.ke" style="color: var(--brand); font-weight: 700;">franchise@potofjollof.co.ke</a>

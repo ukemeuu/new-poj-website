@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Pot of Jollof Kitchen</title>
+    <meta name="description"
+        content="Discover upcoming events, live music, and special themed nights at Pot of Jollof Nairobi.">
+
+    <!-- Fonts (Luxury Redesign) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .event-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid var(--color-secondary);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .event-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .event-date {
+            font-family: var(--font-heading);
+            color: var(--color-secondary);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .no-events-msg {
+            text-align: center;
+            padding: 4rem;
+            color: #888;
+            font-size: 1.1rem;
+            border: 1px dashed #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Pot of Jollof <span>Kitchen</span></a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="events.html" class="nav-link active">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="book-table.html" class="nav-link">Book Table</a></li>
+                <li><a href="http://potofjollof.africa.restaurant" target="_blank" class="btn-gold-outline"
+                        style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title" style="font-size: 3.5rem;">Our <span>Events</span></h1>
+                <p class="hero-subtitle">Good vibes, great food, and unforgettable memories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events List -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div id="events-container">
+                <!-- Events will be populated by JS -->
+                <div class="no-events-msg" data-aos="fade-up">
+                    <i class="far fa-calendar-times" style="font-size: 2rem; margin-bottom: 1rem; display:block;"></i>
+                    No upcoming events at this time.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h4 class="logo" style="margin-bottom: 2rem;">Pot of Jollof <span>Kitchen</span></h4>
+
+            <div style="margin-bottom: 2rem;">
+                <a href="become-supplier.html"
+                    style="color: var(--color-text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid transparent; transition: 0.4s;">Become
+                    A Supplier</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <p style="color: #888; font-size: 0.9rem;">Authentic Nigerian cuisine delivering happiness one plate
+                    at a time.</p>
+                <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/potofjollofke/" target="_blank"><i class="fab fa-instagram"
+                            style="font-size: 1.2rem;"></i></a>
+                    <a href="https://twitter.com/potofjollofke" target="_blank"><i class="fab fa-twitter"
+                            style="font-size: 1.2rem;"></i></a>
+                    <a href="https://www.facebook.com/Potofjollofke/" target="_blank"><i class="fab fa-facebook"
+                            style="font-size: 1.2rem;"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; color: #888;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; color: #888;">
+                    <li><i class="fas fa-phone"></i> 0795-384-140</li>
+                    <li><i class="fas fa-envelope"></i> customerservice@potofjollof.co.ke</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hurlingham, Nairobi</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 2rem; color: #666; font-size: 0.8rem;">
+            &copy; 2025 POT OF JOLLOF LTD. All rights reserved.
+            <p style="color: #444; font-size: 0.7rem; margin-top: 10px;">Designed by <a
+                    href="http://mani24studio.vercel.app/" target="_blank"
+                    style="color: #666; text-decoration: none; transition: 0.3s;"
+                    onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='#666'">Mani 24
+                    Studio</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
